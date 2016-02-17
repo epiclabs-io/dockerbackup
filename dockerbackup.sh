@@ -141,7 +141,8 @@ log "Now scanning for Docker backup plans..."
 for d in "$BACKUP_PLAN_FOLDER"/*.conf ; do 
 
 	backup "$d" >> "$LOGFILE"
-
+	readConfig "$CONFIG_FILE"
+	
 done
 
 log "Done."
