@@ -140,7 +140,7 @@ log "Logging to $LOGFILE."
 log "Now scanning for Docker backup plans..."
 for d in "$BACKUP_PLAN_FOLDER"/*.conf ; do 
 
-	backup $d
+	backup "$d" >> "$LOGFILE"
 
 done
 

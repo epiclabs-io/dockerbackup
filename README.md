@@ -21,6 +21,9 @@ Although the script runs every day, it will check each container's schedule to s
 
 Trick: You can override gobal variables in each containers's backup configuration file, for example to back up a specific machine to a different FTP host.
 
+### Logging
+
+The script automatically saves rotating logs to the logging folder specified in the configuration file, by default `/var/log/dockerbackup/`
 
 ## License
 
